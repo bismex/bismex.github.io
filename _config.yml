@@ -1,0 +1,21 @@
+title: Seokeon's Blog
+name: "Seokeon's Blog"
+author: Seokeon Choi
+# twitter_username: lilianweng
+baseurl: ""
+description: Visionary researcher.
+profile_url: "http://bismex.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
+plugins:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge

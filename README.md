@@ -1,2 +1,1 @@
-# bismex.github.io
-bismex.github.io
+Seokeon's blog
