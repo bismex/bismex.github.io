@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 title: "From Autoencoder to Beta-VAE"
 date: 2019-05-20 23:18:00
 tags: autoencoder vae
