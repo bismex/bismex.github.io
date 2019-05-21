@@ -16,14 +16,14 @@ $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #9080ee !default;
 
-$grey-color:       #ef657f !default;
+$grey-color:       #df556f !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 20%) !default;
 
 $crimson-color:         #9080ee;
-$crimson-color-light:   #f2b25f;
+$crimson-color-light:   #ef657f;
 $crimson-color-very-light:   lighten($crimson-color, 40%) !default;
-$crimson-color-dark:    #ef657f;
+$crimson-color-dark:    #f2b25f;
 
 
 $orange-color:          #ff8fe6;
