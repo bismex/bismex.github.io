@@ -6,7 +6,7 @@
 // Define defaults for each variable.
 $base-font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   14px !default;
-$base-font-weight: 450 !default;
+$base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.65 !default;
 
@@ -16,7 +16,7 @@ $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #9080EE !default;
 
-$grey-color:       #828282 !default;
+$grey-color:       #929282 !default;
 $grey-color-light: lighten($grey-color, 60%) !default;
 $grey-color-dark:  darken($grey-color, 15%) !default;
 
