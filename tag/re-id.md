@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: re-identification"
+title: "Tag: re-id"
 tag: re-id
 ---
