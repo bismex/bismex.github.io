@@ -165,7 +165,7 @@
 }
 
 .page-heading {
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.25);
   font-weight: 600;
 }
 
@@ -174,7 +174,7 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit * 2;
+    margin-bottom: $spacing-unit * 1.5;
   }
 }
 
