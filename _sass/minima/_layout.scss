@@ -6,7 +6,7 @@
   // border-bottom: 1px solid $crimson-color-very-light;
   min-height: $spacing-unit * 1.75;
 
-  background: #222;
+  background: #444;
   opacity: 0.8;
 
   // Positioning context for the mobile navigation icon
@@ -174,7 +174,7 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit * 1.5;
+    margin-bottom: $spacing-unit * 1.3;
   }
 }
 
@@ -199,7 +199,7 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.75);
+  @include relative-font-size(1.50);
   font-weight: 600;
 
   font-color: #000000;
