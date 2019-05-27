@@ -27,6 +27,18 @@ tags: CV
 
 ## Architecture
 
+
+**Notation**
+{: class="info"}
+| Symbol | Mean |
+| ---------- | ---------- |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+| ---------- | ---------- |
+
 <br/>
 ![picture]({{ '/assets/images/PATB01.png' | relative_url }})
 {: style="width: 100%;" class="center"}
