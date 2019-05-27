@@ -28,7 +28,10 @@ tags: CV
 ## Architecture
 
 
-**Notation**
+<p align="center">
+[Notation]
+</p>
+
 {: class="info"}
 | Symbol | Mean |
 | ---------- | ---------- |
