@@ -199,10 +199,10 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(0.30);
+  @include relative-font-size(1.30);
   font-weight: 600;
 
-  font-color: #303030;
+  font-color: #000000;
 
   &:hover {
     color: $crimson-color-light;
