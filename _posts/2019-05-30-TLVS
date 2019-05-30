@@ -2,7 +2,7 @@
 layout: post
 title: "[2019 CVPR] End-to-End Time-Lapse Video Synthesis from a Single Outdoor Image (*incomplete*)"
 date: 2019-05-30 12:00:00
-tags: CV 
+tags: CV gan 
 ---
 
 <!--more-->
@@ -64,12 +64,51 @@ tags: CV
 
 <br/>
 ![picture]({{ '/assets/images/TLVS01.png' | relative_url }})
-{: style="width: 100%;" class="center"}
-<span style="color: #e01f1f;">***Fig. 1. 전체 프레임워크***</span>
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 1. Time-lapse video 예시***</span>
+
+<br/>
+![picture]({{ '/assets/images/TLVS02.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 2. Multi-frame joint conditional GAN 방법***</span>
+
+<br/>
+![picture]({{ '/assets/images/TLVS03.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 3. 두 가지 데이터셋 예시***</span>
+
+<br/>
+![picture]({{ '/assets/images/TLVS04.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 4. Multi-domain training scheme***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/TLVS05.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 5. Training algorithm***</span>
+
+<br/>
+![picture]({{ '/assets/images/TLVS06.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 6. Guided upsampling (pose processing)***</span>
+
 
 ---
   
 ## Experimental results
+
+
+<br/>
+![picture]({{ '/assets/images/TLVS07.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 7. Time-lapse video 생성 결과***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/TLVS08.png' | relative_url }})
+{: style="width: 40%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 8. Failure cases 생성 결과***</span>
 
 ---
 
