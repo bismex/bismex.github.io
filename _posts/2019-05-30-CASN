@@ -19,6 +19,13 @@ tags: CV re-id
 
 ## Summary
 
+
+<br/>
+![picture]({{ '/assets/images/CASN01.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 1. 요약***</span>
+
+
 ---
 
 ## Motivation
@@ -42,14 +49,74 @@ tags: CV re-id
 |  |  |
 | ---------- | ---------- |
 
+
+
 <br/>
-![picture]({{ '/assets/images/PATB01.png' | relative_url }})
+![picture]({{ '/assets/images/CASN02.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 2. 전체 프레임워크***</span>
+
+
+
+<br/>
+![picture]({{ '/assets/images/CASN03.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 3. Identification module***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/CASN04.png' | relative_url }})
+{: style="width: 40%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 4. Attention map with identification loss***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/CASN05.png' | relative_url }})
 {: style="width: 100%;" class="center"}
-<span style="color: #e01f1f;">***Fig. 1. 전체 프레임워크***</span>
+<span style="color: #e01f1f;">***Fig. 5. Siamese module***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/CASN06.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 6. Attention map with BCE loss***</span>
+
+
+
 
 ---
   
 ## Experimental results
+
+- Re-ID 성능
+
+<br/>
+![picture]({{ '/assets/images/CASN07.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 7. Re-ID 성능 (CUHK03-NP)***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/CASN08.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 8. Re-ID 성능 (DukeMTMC-ReID and Market-1501)***</span>
+
+- Ablation study
+
+<br/>
+![picture]({{ '/assets/images/CASN09.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 9. Ablation study (수치)***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/CASN10.png' | relative_url }})
+{: style="width: 100%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 10. Ablation study (attention map)***</span>
+
+
+
+
 
 ---
 
