@@ -179,7 +179,7 @@
 }
 
 .post-meta {
-  font-size: $small-font-size * 0.5;
+  font-size: $small-font-size * 0.85;
   color: $grey-color;
 
   a.post-tag {
@@ -199,7 +199,7 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.30);
+  @include relative-font-size(0.30);
   font-weight: 600;
 
   font-color: #303030;
