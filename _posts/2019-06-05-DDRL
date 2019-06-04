@@ -1,0 +1,62 @@
+---
+layout: post
+title: "[2019 CVPR] Learning to Reduce Dual-level Discrepancy for Infrared-Visible Person Re-identification (*incomplete*)"
+date: 2019-06-05 12:00:00
+tags: CV 
+---
+
+<!--more-->
+
+---
+
+**Table of content** (*full-version*)
+[[paper]](http://homepage.ntu.edu.tw/~r06944046/pdf/Wang_Learning_to_Reduce_Dual-level_Discrepancy_for_Infrared-Visible_Person_Re-Identification_CVPR19.pdf)
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+---
+
+## Summary
+
+---
+
+## Motivation
+
+---
+
+## Architecture
+
+
+<p align="center">
+[Notation]
+</p>
+
+{: class="info"}
+| Symbol | Mean |
+| ---------- | ---------- |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+| ---------- | ---------- |
+
+<br/>
+![picture]({{ '/assets/images/DDRL01.png' | relative_url }})
+{: style="width: 100%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 1. 전체 프레임워크***</span>
+
+---
+  
+## Experimental results
+
+---
+
+## Comments
+
+---
+
+## References
+
+[1] Wang, Zhixiang, et al. "Learning to Reduce Dual-level Discrepancy for Infrared-Visible Person Re-identification." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. Vol. 2. No. 3. 2019.
