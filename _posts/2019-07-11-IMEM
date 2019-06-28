@@ -23,6 +23,14 @@ tags: CV
 
 ## Motivation
 
+
+
+<br/>
+![picture]({{ '/assets/images/IMEM01.png' | relative_url }})
+{: style="width: 100%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 1. Motivation***</span>
+
+
 ---
 
 ## Architecture
@@ -43,13 +51,62 @@ tags: CV
 | ---------- | ---------- |
 
 <br/>
-![picture]({{ '/assets/images/IMEM01.png' | relative_url }})
+![picture]({{ '/assets/images/IMEM02.png' | relative_url }})
 {: style="width: 100%;" class="center"}
-<span style="color: #e01f1f;">***Fig. 1. 전체 프레임워크***</span>
+<span style="color: #e01f1f;">***Fig. 2. 전체 프레임워크***</span>
 
 ---
   
 ## Experimental results
+
+
+
+<br/>
+![picture]({{ '/assets/images/IMEM03.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 3. Parameter analysis (beta)***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/IMEM04.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 4. Parameter analysis (lambda)***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/IMEM05.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 5. Parameter analysis (the number of candidate positive samples)***</span>
+
+
+<br/>
+![picture]({{ '/assets/images/IMEM06.png' | relative_url }})
+{: style="width: 100%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 6. Ablation study***</span>
+
+
+
+<br/>
+![picture]({{ '/assets/images/IMEM07.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 7. Exemplar memory의 계산량 분석***</span>
+
+
+
+<br/>
+![picture]({{ '/assets/images/IMEM08.png' | relative_url }})
+{: style="width: 100%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 8. Performance comparison (Market-1501, DukeMTMC-reID)***</span>
+
+
+
+<br/>
+![picture]({{ '/assets/images/IMEM09.png' | relative_url }})
+{: style="width: 60%;" class="center"}
+<span style="color: #e01f1f;">***Fig. 9. Performance comparison (MSMT17)***</span>
+
+
+
 
 ---
 
