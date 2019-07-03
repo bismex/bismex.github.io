@@ -27,6 +27,46 @@ tags: CV re-id unsupervised
 
 ## Architecture
 
+Patch-based + feature-learning + unsupervised 방식
+Part based랑 다른 점은 영상을 patch개념으로 뜯어낸다.
+PatchNet: patch 뜯고 unsup으로 밀고 당기는 네트워크
+
+Image-level unsup 방식의 한계점이며 patch를 도입한 이유 patch별로 push/pull (fig 3)
+Loss를 도입 (PEDAL, IPFL)
+PEDAL: patch 자체가 얼마나 discriminative 한지 
+IPFL: image-level guidance를 제공
+Market, Duke 사용
+
+Method
+
+backbone에서 feature를 뽑은 다음에 patch generation 하고 패치마다 feature가 추출된다. 
+patch마다 다르게 후처리를 해준다. 각 patch마다 PEDAL loss(patch-level)들어가고 이를 다 concat해서 IPFL loss를 적용(image level)
+
+resNet50 imagenet pretrained model
+patch를 sampling하는 것은 horizontal initialization한 뒤에 나중에 적응형으로 나눠진다.
+IPFL에서 cyclic ranking을 적용
+
+Patch generation network: 이는 main contribution은 아니다. Spatial transformation network를 이용해서 feature-level에서 sampling 한다. crop에 대한 언급은 없었음
+PEDAL: patch마다 다른 특성이 들어가야 해서 다른 후처리를 적용한다. 
+patch feature memory L2 loss이용해서 m번째 patch들끼리 비교를 해서 줄을 세운 다음에 L2 distance가 가장 작은 K를 뽑고.
+feature랑 dimension 같은 memory bank w를 이용한다. 학습된 bank의 
+loss의 의도는 visually similar는 가깝네, 아닌건 멀게 학습을 시키는 것
+memory bank는 영상/patch 마다 있는 것.
+mini-batch마다 PEDAL loss를 주는게 아니고, minibatch가 아닌 안정성있게 training set 전체를 보는 memory를 사용하기 위해서
+IPFL: image-level 가이드를 주는 loss이며 cyclic ranking은 triplet loss랑 비슷한데, P랑 N 어떻게 뽑는지가 핵심
+P는 원본 이미지를 transform해서, N은 re-ranking이랑 비슷하게 
+
+영상당 패치를 4/6/8개 사용
+Batch는 40개의 real sample 40개의 positive sample
+
+comment
+
+
+Duke에서 엄청 뛰었네
+Baseline에서 조차 많은 향상을 보임 baseline이 뭐지?
+PCB랑 비교결과가 없다. unsup이라서
+
+
 
 <p align="center">
 [Notation]
