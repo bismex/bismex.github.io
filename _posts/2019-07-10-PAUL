@@ -42,7 +42,6 @@ Method
 backbone에서 feature를 뽑은 다음에 patch generation 하고 패치마다 feature가 추출된다. 
 patch마다 다르게 후처리를 해준다. 각 patch마다 PEDAL loss(patch-level)들어가고 이를 다 concat해서 IPFL loss를 적용(image level)
 
-resNet50 imagenet pretrained model
 patch를 sampling하는 것은 horizontal initialization한 뒤에 나중에 적응형으로 나눠진다.
 IPFL에서 cyclic ranking을 적용
 
@@ -63,8 +62,9 @@ comment
 
 
 Duke에서 엄청 뛰었네
-Baseline에서 조차 많은 향상을 보임 baseline이 뭐지?
-PCB랑 비교결과가 없다. unsup이라서
+Baseline에서 조차 많은 향상을 보임
+Labeled MSMT17에서 pretrained한뒤 patch generation에서 fix
+
 
 
 
