@@ -10,7 +10,8 @@ tags: CV re-id unsupervised
 ---
 
 **Table of content** (*short-version*)
-[[paper]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Patch-Based_Discriminative_Feature_Learning_for_Unsupervised_Person_Re-Identification_CVPR_2019_paper.pdf)
+[[paper]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Patch-Based_Discriminative_Feature_Learning_for_Unsupervised_Person_Re-Identification_CVPR_2019_paper.pdf) [[github]](https:
+//github.com/QizeYang/PAUL.)
 {: class="table-of-content"}
 * TOC
 {:toc}
