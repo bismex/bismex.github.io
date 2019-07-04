@@ -9,7 +9,7 @@ tags: CV
 
 ---
 
-**Table of content** (*short-version*)
+**Table of content** (*full-version*)
 [[paper]]() [[github]]()
 {: class="table-of-content"}
 * TOC
