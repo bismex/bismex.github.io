@@ -28,7 +28,7 @@ tags: CV
 ## Architecture
 
 
-<p align="center">
+<p align="center" style="font-weight: bold;">
 [Notation]
 </p>
 
@@ -43,9 +43,13 @@ tags: CV
 | ---------- | ---------- |
 
 <br/>
-![picture]({{ '/assets/images/PATB01.png' | relative_url }})
-{: style="width: 100%;" class="center"}
-<span style="color: #e01f1f;">***Fig. 1. 전체 프레임워크***</span>
+
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[XXX]</p>
+![picture]({{ '/assets/images/XXXX01.png' | relative_url }}){: style="width: 100%;" class="center"}
+<br/>
 
 ---
   
