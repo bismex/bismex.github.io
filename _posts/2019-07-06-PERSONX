@@ -1,0 +1,66 @@
+---
+layout: post
+title: "[2019 CVPR] Dissecting Person Re-identification from the Viewpoint of Viewpoint (*incomplete*)"
+date: 2019-07-06 12:00:00
+tags: CV re-id
+---
+
+<!--more-->
+
+---
+
+**Table of content** (*full-version*)
+[[paper]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Dissecting_Person_Re-Identification_From_the_Viewpoint_of_Viewpoint_CVPR_2019_paper.pdf) [[github]](https://github.com/sxzrt/Dissecting-Person-Re-ID-from-the-Viewpoint-of-Viewpoint)
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+---
+
+## Summary
+
+---
+
+## Motivation
+
+---
+
+## Architecture
+
+
+<p align="center" style="font-weight: bold;">
+[Notation]
+</p>
+
+{: class="info"}
+| Symbol | Mean |
+| ---------- | ---------- |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+| ---------- | ---------- |
+
+<br/>
+
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[XXX]</p>
+![picture]({{ '/assets/images/XXXX01.png' | relative_url }}){: style="width: 100%;" class="center"}
+<br/>
+
+---
+  
+## Experimental results
+
+---
+
+## Comments
+
+---
+
+## References
+
+[1] Sun, Xiaoxiao, and Liang Zheng. "Dissecting Person Re-identification from the Viewpoint of Viewpoint." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2019.
