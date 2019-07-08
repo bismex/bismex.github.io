@@ -73,7 +73,9 @@ tags: CV re-id
 ## Benchmarking and data validation
 
 - Data validation
-  - Eliglibility(: 
+  - Eliglibility(적격): $$PCB > triplet \approx IDE+$$ performance trend is similar to that of real-world dataset
+  - Purity(순도): High-resolution, normal sunlight, relatively consistent background $$\rightarrow$$ high accuracy compared to real-world datasets $$\rightarrow$$ ideal ones for studying the impact of viewpoints
+  - Sensitivity(민감도): PersonX subsets are sensitive to background complexity (see the second below figure)
 - Datasets
   - Difficulty
     - $$PersonX_{12} < PersonX_{13}$$: color difference
