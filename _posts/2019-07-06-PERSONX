@@ -41,25 +41,7 @@ tags: CV re-id
 
 ---
 
-## Architecture
-
-
-<p align="center" style="font-weight: bold;">
-[Notation]
-</p>
-
-{: class="info"}
-| Symbol | Mean |
-| ---------- | ---------- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-| ---------- | ---------- |
-
-<br/>
-
+## Description
 
 
 <br/>
@@ -69,7 +51,12 @@ tags: CV re-id
 
 ---
   
-## Experimental results
+## Benchmarking and data validation
+
+
+---
+  
+## Evaluation of viewpoint
 
 ---
 
