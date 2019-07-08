@@ -35,8 +35,8 @@ tags: CV re-id
 
 
 <br/>
-<p align="center" style="color: #e01f1f; font-weight: bold;">[PERSONX 데이터셋에서 viewpoint 의 예시]</p>
-![picture]({{ '/assets/images/PERSONX01.png' | relative_url }}){: style="width: 100%;" class="center"}
+<p align="center" style="color: #e01f1f; font-weight: bold;">[Viewpoint에 대한 설명]</p>
+![picture]({{ '/assets/images/PERSONX01.png' | relative_url }}){: style="width: 70%;" class="center"}
 <br/>
 
 ---
@@ -44,19 +44,70 @@ tags: CV re-id
 ## Description
 
 
+
 <br/>
-<p align="center" style="color: #e01f1f; font-weight: bold;">[XXX]</p>
-![picture]({{ '/assets/images/XXXX01.png' | relative_url }}){: style="width: 100%;" class="center"}
+<p align="center" style="color: #e01f1f; font-weight: bold;">[PERSONX 데이터셋에서 viewpoint 변화에 대한 예시]</p>
+![picture]({{ '/assets/images/PERSONX03.png' | relative_url }}){: style="width: 70%;" class="center"}
 <br/>
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[PERSONX 데이터셋에서 배경/카메라/옷 변화에 대한 예시]</p>
+![picture]({{ '/assets/images/PERSONX02.png' | relative_url }}){: style="width: 100%;" class="center"}
+<br/>
+
+
+
 
 ---
   
 ## Benchmarking and data validation
 
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[PERSONX 데이터셋의 종류]</p>
+![picture]({{ '/assets/images/PERSONX04.png' | relative_url }}){: style="width: 70%;" class="center"}
+<br/>
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[데이터셋의 종류에 따른 성능]</p>
+![picture]({{ '/assets/images/PERSONX05.png' | relative_url }}){: style="width: 100%;" class="center"}
+<br/>
 
 ---
   
 ## Evaluation of viewpoint
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[Training set에서 viewpoint의 부재 실험]</p>
+![picture]({{ '/assets/images/PERSONX06.png' | relative_url }}){: style="width: 100%;" class="center"}
+<br/>
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[Training set에서 일부 viewpoint에서만 학습]</p>
+![picture]({{ '/assets/images/PERSONX07.png' | relative_url }}){: style="width: 70%;" class="center"}
+<br/>
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[Query의 viewpoint 변화에 따른 성능]</p>
+![picture]({{ '/assets/images/PERSONX08.png' | relative_url }}){: style="width: 70%;" class="center"}
+<br/>
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[Query와 true match사이에 존재하는 viewpoint disparity의 영향]</p>
+![picture]({{ '/assets/images/PERSONX09.png' | relative_url }}){: style="width: 70%;" class="center"}
+<br/>
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[Market-1203에 대한 예시]</p>
+![picture]({{ '/assets/images/PERSONX10.png' | relative_url }}){: style="width: 70%;" class="center"}
+<br/>
+
+
 
 ---
 
