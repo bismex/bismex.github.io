@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[2019 CVPR] Dissecting Person Re-identification from the Viewpoint of Viewpoint (*incomplete*)"
-date: 2019-07-06 12:00:00
+date: 2019-07-08 12:00:00
 tags: CV re-id
 ---
 
@@ -43,25 +43,45 @@ tags: CV re-id
 
 ## Description
 
-
-
+- Summary
+  - Total number of images: 36 angles $$\times$$ 1266 identities $$\times$$ 6 cameras
+  - Resolution: 1024 $$\times$$ 768 (default), 512 $$\times$$ 242 (low-resolution)
+- Identities
+  - Diversity(1266 identities): skin color, ages, body forms (height and weight), hair styles, clothes (mapped from real-world image), carrying, motion (walking, running, standing, having a dialogue)
+- Visual factors
+  - Viewpoint(36 angles): 36 different angles, 4 orientation (clustered, see the first figure)
+  - Camera(6 backgrounds): illumination changes (sun light, point light, spotlight, area light), camera (image resolution, projection, focal length, height), background (uniform colors, street scenes)
+    - (1) white background
+    - (2) gray background (similar to 1)
+    - (3) black background (not similar 1)
+    - (4) street scene
+    - (5) street scene, different background (similar to 4)
+    - (6) street scene, different ground color (gray) and shadowed region (not similar to 4)
+    
 <br/>
 <p align="center" style="color: #e01f1f; font-weight: bold;">[PERSONX 데이터셋에서 viewpoint 변화에 대한 예시]</p>
 ![picture]({{ '/assets/images/PERSONX03.png' | relative_url }}){: style="width: 70%;" class="center"}
 <br/>
-
 
 <br/>
 <p align="center" style="color: #e01f1f; font-weight: bold;">[PERSONX 데이터셋에서 배경/카메라/옷 변화에 대한 예시]</p>
 ![picture]({{ '/assets/images/PERSONX02.png' | relative_url }}){: style="width: 100%;" class="center"}
 <br/>
 
-
-
-
 ---
   
 ## Benchmarking and data validation
+
+- Data validation
+  - Eliglibility(: 
+- Datasets
+  - Difficulty
+    - $$PersonX_{12} < PersonX_{13}$$: color difference
+    - $$PersonX_{45} < PersonX_{46}$$: background difference
+    - $$PersonX_{123} < PersonX_{456}$$: more complex background
+    - $$PersonX_{456} < PersonX_{456}-lr$$: less information
+  - Existing synthetic datasets
+    - SyRI, SOMAset
 
 <br/>
 <p align="center" style="color: #e01f1f; font-weight: bold;">[PERSONX 데이터셋의 종류]</p>
