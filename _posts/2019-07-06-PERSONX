@@ -19,6 +19,22 @@ tags: CV re-id
 
 ## Summary
 
+- Viewpoint(pedestrian rotation angle)에 대한 고찰
+- 기존에 있는 dataset으로 viewpoint를 분석할 때 문제점
+  - 데이터의 양이 부족 (사람마다 viewpoint가 한정적, fixed/static)
+  - 다른 시각적 요소들이 완전이 배제된 채 오로지 viewpoint에 대한 고찰 불가 (실제 데이터셋은 시각적 요소 복합적으로 적용) 
+- PersonX: large-scale synthetic data engine
+  - 1266명의 수동으로 제작된 identity
+  - Controllable (여러가지 시각적 조건 조작 가능)
+  - 정확한 bounding box (Detection error에 영향을 받지 않음)
+- 실험 방법
+  - PersonX와 다른 기존 데이터셋들에서 reid 방법들이 성능 경향이 어느정도 일치하는지 확인
+  - Viewpoint가 수동적으로 레이블링된 real-world Market-1203에서 경험적으로 연구
+- 연구의 목적
+  - Training set / Gallery set / Probe set을 디자인 하는 방법 제시
+
+
+
 ---
 
 ## Motivation
