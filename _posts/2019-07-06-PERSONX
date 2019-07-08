@@ -34,10 +34,10 @@ tags: CV re-id
   - Training set / Gallery set / Probe set을 디자인 하는 방법 제시
 
 
-
----
-
-## Motivation
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[PERSONX 데이터셋에서 viewpoint 의 예시]</p>
+![picture]({{ '/assets/images/PERSONX01.png' | relative_url }}){: style="width: 100%;" class="center"}
+<br/>
 
 ---
 
