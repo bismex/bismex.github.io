@@ -2,7 +2,7 @@
 layout: post
 title: "ALL about cross-modality reid (ongoing..)"
 date: 2019-01-01 12:00:00
-tags: CV
+tags: CV ML REID 
 ---
 
 <!--more-->
