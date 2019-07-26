@@ -4,7 +4,7 @@ title: "[2019 CVPR] Progressive Pose Attention Transfer for Person Image Generat
 date: 2019-05-31 12:00:00
 tags: 3D pose video supervised unsupervised DB
 CV ML face gait REID detection person-search segmentation tracking
-DA GCN VAE GAN multi-GAN disentangled attention
+DA GCN VAE GAN disentangled attention
 ---
 
 <!--more-->
