@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ALL about pose-based person image generation (ongoing..)"
-date: 2019-07-27 12:00:00
+date: 2019-01-01 12:00:00
 tags: CV
 ---
 
