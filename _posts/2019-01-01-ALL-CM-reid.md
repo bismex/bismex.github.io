@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ALL about cross-modality reid (ongoing..)"
-date: 2019-07-26 12:00:00
+date: 2019-01-01 12:00:00
 tags: CV
 ---
 
