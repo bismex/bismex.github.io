@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: gcn"
-tag: gcn
+title: "Tag: GCN"
+tag: GCN
 ---
