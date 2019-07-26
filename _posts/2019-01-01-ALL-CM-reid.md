@@ -2,7 +2,7 @@
 layout: post
 title: "ALL about cross-modality reid (ongoing..)"
 date: 2019-01-01 12:00:00
-tags: CV ML REID DA GAN VAE
+tags: CV ML REID DA GAN AE
 ---
 
 <!--more-->
