@@ -2,7 +2,7 @@
 layout: post
 title: "ALL about pose-based person image generation (ongoing..)"
 date: 2019-01-01 12:00:00
-tags: CV REID pose
+tags: CV REID AE GAN pose
 ---
 
 <!--more-->
