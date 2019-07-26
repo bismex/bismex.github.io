@@ -2,7 +2,7 @@
 layout: post
 title: "ALL about disentanglement (ongoing..)"
 date: 2019-01-01 12:00:00
-tags: ML CV GAN VAE autoencoder disentangled
+tags: ML CV GAN AE disentangled
 ---
 
 <!--more-->
