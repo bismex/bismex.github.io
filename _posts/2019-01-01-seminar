@@ -1,0 +1,76 @@
+---
+layout: post
+title: "Short review (Paper seminar)"
+date: 2019-01-01 00:00:00
+tags: CV ML
+---
+
+<!--more-->
+
+---
+
+**Table of content** (*short-version*)
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+---
+
+Learning Across Tasks and Domains [good]
+
+Multitask 관련 논문
+네트워크 설명
+task 두개 domain 두개
+A synthetic (task12 label있음)
+B real (task1에 대한 label만 있음)
+빨간색을 task 1 (segmentation) AB가지고 학습
+초록색은 task 2 (depth estimation) A만 가지고 학습, knowledge transfer (G) 
+총 4 step 학습
+기존 DA는 data 분포 비슷하게 하는 것과 달리 domain아닌 task에 대한 feature 비슷하게 맞춰준다.
+Loss는 task 1 L1 loss(segmentation), G는 align 잘해주기 위해서 (task 1 enc feature, task2 enc feature L2 loss align)
+더 깊은 layer에서 task feature align 해주는게 좋다.
+G구조는 정확히 안나와있고 conv relu bn 사용, enc-dec구조 (feature 반 줄이고)
+[두개 task가 있을 때, 하나의 label이 없을 경우 사용 가능]
+[분할 학습하는 방법에 대한 것]
+★★★★좀더 고민이 필요할듯
+
+Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [good]
+
+Meta learning관련 (learning to learn)
+분야설명-
+few shot때 일반적인 SGD는 오버피팅 된다.
+어떻게 학습을 해야 adaptation이 잘 될까?
+small training set으로 모델 학습할 때 잘 adaptation 될 수 있도록
+classification 관련 metalearning 논문
+접근방식: initial parameter를 잘 만들겠다. 
+배치마다 loss 계산한다음에 파라미터 업데이트 하는게 기본이지만,
+업데이트하지않고 변경된 파라미터에 대한것로 다시 loss를 구한다음 이게 작아지는 방향으로 업데이트
+regression, classification, reinforce learning 적용
+미래를 봐서 업데이트를 했다고 가정하고 그 때의 최적에 방향으로 갈 수 있게끔 업데이트함.
+[★★★★★pretrain할 때 이방법을 통해 하는게 나을수도 있다.]
+[★★★★★나중에 학습할때도 이걸로 사용하곤 한다.]
+
+Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles [good]
+
+아래의 self supervised를 적용하는 것.
+이미지를 9개의 타일로 자른 다음에, 맞추는 것. (직소퍼즐, 조합을 label로 생각해서 직접 만듬)
+(이는 sementic context를 파악하는 데 좋다.)
+이 파라미터를 가지고 transfer learning을 해보고, supervised learning을 해 봤을 때, 성능이 올라감.
+특히 여기는 unsupervised classification을 위해서 제안한 것.
+human labeling을 쓰지 않는 것이 핵심
+[unsup 문제를 풀거면 이런 쪽으로 다른 task를 생각해보라!]
+
+
+Self-supervised learning 간략 설명
+- unsup 한계를 극복하기 위해서
+- ground truth는 strong supervision. 얻기 힘들다.
+- Unsup이랑 다른점은 unsup안에 selfsup이 포함되어 있고 label, domain정보 전혀 없이 학습하는 것.
+- 도메인에 대한 정보를 가지고 임의의 task(pre-task)를 먼저 학습하고, 추가로 sup 학습하는 것
+
+
+## References
+
+[1] 
+
+
+
