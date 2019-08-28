@@ -16,6 +16,8 @@ tags: CV ML
 
 ---
 
+★★★의 개수는 내가 적용할 수 있는가에 관련된 것. 논문 및 발표의 퀄리티가 아
+
 Learning Across Tasks and Domains [good]
 
 Multitask 관련 논문
@@ -32,7 +34,7 @@ Loss는 task 1 L1 loss(segmentation), G는 align 잘해주기 위해서 (task 1 
 G구조는 정확히 안나와있고 conv relu bn 사용, enc-dec구조 (feature 반 줄이고)
 [두개 task가 있을 때, 하나의 label이 없을 경우 사용 가능]
 [분할 학습하는 방법에 대한 것]
-★★★★좀더 고민이 필요할듯
+[★★★★좀더 고민이 필요할듯]
 
 Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks [good]
 
@@ -58,7 +60,7 @@ Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles [good]
 이 파라미터를 가지고 transfer learning을 해보고, supervised learning을 해 봤을 때, 성능이 올라감.
 특히 여기는 unsupervised classification을 위해서 제안한 것.
 human labeling을 쓰지 않는 것이 핵심
-[unsup 문제를 풀거면 이런 쪽으로 다른 task를 생각해보라!]
+[★★★unsup 문제를 풀거면 이런 쪽으로 다른 task를 생각해보라!]
 
 
 Self-supervised learning 간략 설명
@@ -66,6 +68,31 @@ Self-supervised learning 간략 설명
 - ground truth는 strong supervision. 얻기 힘들다.
 - Unsup이랑 다른점은 unsup안에 selfsup이 포함되어 있고 label, domain정보 전혀 없이 학습하는 것.
 - 도메인에 대한 정보를 가지고 임의의 task(pre-task)를 먼저 학습하고, 추가로 sup 학습하는 것
+
+
+NLNL: Negative Learning for Noisy Labels
+- 데이터셋에 잘못된 label이 존재할 때 주어진 레이블로 학습하는 것이 아닌, rand sampling을 통해 하나의 다른 label을 부여하고 그 label이 아니다 (negative learning) 라는 방식의 CE loss를 사용
+- NL만 하면 수렴속도가 너무 느려서 NL + PL (원래 CE) 섞음
+- 또한 confidence (CE의 max predicted prob.) 를 고려해서 NL을 하는 selective learning을 수행
+- 학습은 NL -> SelNL -> SelPL 하는 방식으로 진행하면 좋은 성능
+- cipar100이나 10으로 label이 적을 때 잘되는 것 같음(imagenet에서 한계성)
+- 최종 방법은 semisupervised까지 적용함
+[★★★★Negative mining같은 느낌이기도 한데 다른 task에서도 적용가능할듯.]
+
+ABD-Net: Attentive but Diverse Person Re-Identification
+- Attention 기반 reid 논문 
+- 기존의 attention기반 방법들은 영상을 local하게 보기 때문에 feature correlation이 너무 높아짐
+- 이는 feature representation이 중요한 reid task에서 단점이 될 수 있다.
+- lower correlation을 갖도록 CVDO를 제안 (regularization?)
+- attention은 channel간의 유사도를 보는 CAM과 position간의 유사도를 보는 PAM 적용
+- PAM은 non-local과 거의 동일, CAM도 기존에 있는것 (그 CAM 아님)
+[★attention에 크게 관심은 없어서..]
+
+
+Partially-Supervised Image Captioning
+- 학습할 때 보이지 않았던 것을 생성하는 방법
+- FSM(Finite state machine) 을 이용
+[★captioning에 크게 관심은 없어서..]
 
 
 ## References
