@@ -79,6 +79,7 @@ NLNL: Negative Learning for Noisy Labels
 - 최종 방법은 semisupervised까지 적용함
 [★★★★Negative mining같은 느낌이기도 한데 다른 task에서도 적용가능할듯.]
 
+
 ABD-Net: Attentive but Diverse Person Re-Identification
 - Attention 기반 reid 논문 
 - 기존의 attention기반 방법들은 영상을 local하게 보기 때문에 feature correlation이 너무 높아짐
@@ -93,6 +94,23 @@ Partially-Supervised Image Captioning
 - 학습할 때 보이지 않았던 것을 생성하는 방법
 - FSM(Finite state machine) 을 이용
 [★captioning에 크게 관심은 없어서..]
+
+
+Tracking emerges by colorizing videos
+- Self supervised learning
+- 흑백영상을 RGB로 바꾸는 과정을 통해 여러가지 태스크를 수행
+- RGB영상이 없는 흑백 영상 / RGB영상이 있는 흑백 영상(n-1, n-2, n-3) 이용
+- 흑백 영상간의 유사 point를 찾은다음 해당하는 color를 가져온다.
+- 학습은 이렇게 수행하지만 실제 테스트때는 color가 아닌 segmentation mask나 pose keypoint 추정을 수행
+- One-shot learning
+
+
+EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks
+- 가장 좋은 성능
+- 파라미터도 적음
+- Base(B0)는 Nas방법을 통해 찾음
+- B0를 scaling해서 더 좋은 것을 찾는다.
+- width scaling / depth scaling / high-resulution scaling등을 합침
 
 
 ## References
