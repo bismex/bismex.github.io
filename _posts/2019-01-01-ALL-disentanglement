@@ -1,0 +1,40 @@
+---
+layout: post
+title: "ALL about disentanglement (ongoing..)"
+date: 2019-01-01 12:00:00
+tags: ML CV GAN AE disentangled
+---
+
+<!--more-->
+
+---
+
+**Table of content** (*full-version*)
+[[paper]]() [[github]]()
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+---
+
+### Disentangled Spectrum Variations Networks for NIR-VIS Face Recognition
+- Dataset을 구성하는 방식 (★) 
+  - Modality dataset: 영상 x, modal l (IDNet, ASANet 학습)
+  - Identity dataset: 영상 x, identity y (IDNet 학습)
+- 아키텍처
+  - DSVN
+    - SSOD (multiple DSV): disentangling spectrum variation
+    - SaDFL (IDNet + ASANet): learning identity-discriminative features
+      - IDNet: G_H, D_U (identity-discriminative feature learning)
+      - ASANet: G_H, D_M (eliminating spectrum information)
+- Triplet 구성하는 방식
+  - anchor / pos / neg (★)
+    - 111 / 101 / 001 / 110 / 100 / 000 (010 / 011 빼고 전부) - DB가 많지 않아 overfitting 방지
+    
+### Detach and Adapt: Learning Cross-Domain Disentangled Deep Representation
+- Source에는 attribute가 labeled, target에는 attribute가 unlabeled (★) -> RGB는 pose estimator 좋지만 IR은 좋지않다는 점에서 활용
+
+
+
+
+---
