@@ -34,7 +34,17 @@ tags: ML CV GAN AE disentangled
 ### Detach and Adapt: Learning Cross-Domain Disentangled Deep Representation
 - Source에는 attribute가 labeled, target에는 attribute가 unlabeled (★) -> RGB는 pose estimator 좋지만 IR은 좋지않다는 점에서 활용
 
-
+### Image-to-image translation for cross-domain disentanglement
+- Disentangling the internal representations learned by deep models to further improve their performance and achieve a finer control
+- Cross domain disentanglement
+  - The shared part contains information for both domains
+  - The exclusive parts contain only factors of variation that are particular to each domain
+- Advantages
+  - Sample diversity
+  - Cross domain retrieval
+  - Domain specific image transfer
+  - Domain specific interpolation
+  
 
 
 ---
