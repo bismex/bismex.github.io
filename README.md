@@ -1,6 +1,3 @@
 Seokeon's blog
 
 
-
- 
- 
