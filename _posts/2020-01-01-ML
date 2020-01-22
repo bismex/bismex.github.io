@@ -24,5 +24,16 @@ tags: ML
 - A symmetric 관련 얘기 (9장)
 - 
 
+## Multimedia (20-01-22)
+
+- dopler effect: 자신에게 다가오면 압력이 커지면서 high frequency, 멀어지면 다시 low frequency
+- 상 하의 AMP가 다른 이유는 뭘까
+- 20장의 색은 에너지를 뜻함 (각 SAMPLED TIME 마다 여러개의 FREQ)
+- freq를 cos와 sin으로 decompose 
+- 주기적 신호는 유한(무한?)의 sinuous로 분해가능 (DSP기본개념)
+- w 는 2pi n 의미
+- 비주기신호를 주기신호로 연장한다음 DFT하면 유한의 e의 합으로 변환가능 (?)
+
+
 
 ---
