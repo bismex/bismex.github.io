@@ -26,27 +26,25 @@ tags: CV REID English
 <br/>
 
 
+- Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
 
+- Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
 
-### 1) Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
+- Vehicle Re-identification with Location and Time Stamps
 
-### 2) Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
+- VehicleNet, Learning Robust Feature Representation for Vehicle Re-identification
 
-### 3) Vehicle Re-identification with Location and Time Stamps
+- Multi-Camera Vehicle Tracking with Powerful Visual Features and Spatial-Temporal Cue
 
-### 4) VehicleNet, Learning Robust Feature Representation for Vehicle Re-identification
+- Attention Driven Vehicle Re-identification and Unsupervised Anomaly Detection for Traffic Understanding
 
-### 5) Multi-Camera Vehicle Tracking with Powerful Visual Features and Spatial-Temporal Cue
+- Partition and Reunion, A Two-Branch Neural Network for Vehicle Re-identification
 
-### 6) Attention Driven Vehicle Re-identification and Unsupervised Anomaly Detection for Traffic Understanding
+- Supervised Joint Domain Learning for Vehicle Re-Identification
 
-### 7) Partition and Reunion, A Two-Branch Neural Network for Vehicle Re-identification
+- Vehicle Re-Identification, Pushing the limits of re-identification
 
-### 8) Supervised Joint Domain Learning for Vehicle Re-Identification
-
-### 9) Vehicle Re-Identification, Pushing the limits of re-identification
-
-### 10) Vehicle Re-identification with Learned Representation and Spatial Verification and Abnormality Detection with Multi-Adaptive Vehicle Detectors for Traffic Video Analysis
+- Vehicle Re-identification with Learned Representation and Spatial Verification and Abnormality Detection with Multi-Adaptive Vehicle Detectors for Traffic Video Analysis
 
 ---
 
