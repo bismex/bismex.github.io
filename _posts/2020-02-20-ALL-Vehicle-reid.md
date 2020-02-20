@@ -25,6 +25,7 @@ tags: CV REID English
 ![picture]({{ '/assets/images/VREID01.PNG' | relative_url }}){: style="width: 70%;" class="center"}
 <br/>
 
+### CVPR2019 workshop papers
 
 - Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
 
@@ -52,14 +53,14 @@ tags: CV REID English
 
 ### (Track 3) Multi-sensor Vehicle Detection and Reidentification
 
-
 <br/>
 <p align="center" style="color: #e01f1f; font-weight: bold;">[The result of Track 2 in the AI city challenge 2019]</p>
 ![picture]({{ '/assets/images/VREID02.PNG' | relative_url }}){: style="width: 70%;" class="center"}
 <br/>
 
+### CVPR2018 workshop papers
 
-### 1) Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
+- Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
 
 ---
 
