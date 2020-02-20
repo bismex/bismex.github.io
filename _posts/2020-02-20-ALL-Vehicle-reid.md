@@ -25,6 +25,9 @@ tags: CV REID English
 ![picture]({{ '/assets/images/VREID01.PNG' | relative_url }}){: style="width: 70%;" class="center"}
 <br/>
 
+
+
+
 ### 1) Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
 
 ### 2) Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
@@ -59,6 +62,11 @@ tags: CV REID English
 
 
 ### 1) Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
+
+---
+
+## Conference paper (CVPR, ECCV, ICCV etc..)
+
 
 
 ---
