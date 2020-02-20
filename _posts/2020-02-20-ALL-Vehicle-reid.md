@@ -67,7 +67,19 @@ tags: CV REID English
 
 ## Conference paper (CVPR, ECCV, ICCV etc..)
 
+- Part-regularized Near-duplicate Vehicle Re-identification (CVPR2019)
+- A Dual-Path ModelWith Adaptive Attention For Vehicle Re-Identification (ICCV2019)
+- PAMTRI, Pose-Aware Multi-Task Learning for Vehicle Re-Identification Using Highly Randomized Synthetic Data (ICCV2019)
+- Vehicle Re-identification in Aerial Imagery, Dataset and Approach (ICCV2019)
+- Vehicle Re-identification with Viewpoint-aware Metric Learning (ICCV2019)
 
+
+## Others
+
+- Joint Monocular 3D Vehicle Detection and Tracking (ICCV2019)
+- Joint Prediction for Kinematic Trajectories in Vehicle-Pedestrian-Mixed Scenes (ICCV2019)
+- Self-supervised Moving Vehicle Tracking with Stereo Sound (ICCV2019)
+- Visualizing the Invisible, Occluded Vehicle Segmentation and Recovery (ICCV2019)
 
 ---
 
@@ -81,7 +93,8 @@ tags: CV REID English
 - CompCars[[Project]](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html) [[pdf]](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Yang_A_Large-Scale_Car_2015_CVPR_paper.pdf)
 - Vehicle-1M[[Project]](http://www.nlpr.ia.ac.cn/iva/homepage/jqwang/Vehicle1M.htm) [[pdf]](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16206/16270)
 - VRIC [[Project]](https://qmul-vric.github.io/) [[pdf]](http://www.eecs.qmul.ac.uk/~xiatian/papers/AytacEtAl_GCPR2018.pdf)
-
+- Veri-wild [[project]](https://github.com/PKU-IMRE/VERI-Wild) [[pdf]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Lou_VERI-Wild_A_Large_Dataset_and_a_New_Method_for_Vehicle_CVPR_2019_paper.pdf)
+- CityFlow [[project]](https://cityflow-project.github.io/) [[pdf]](https://arxiv.org/pdf/1903.09254.pdf)
 
 
 ---
@@ -90,7 +103,6 @@ tags: CV REID English
 ## References
 
 - https://github.com/knwng/awesome-vehicle-re-identification
-
 - https://www.aicitychallenge.org/
 
 [1]
