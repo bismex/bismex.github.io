@@ -14,6 +14,7 @@ tags: CV REID English
 * TOC
 {:toc}
 
+
 ---
 
 ## AI city challenge 2019 
@@ -28,6 +29,24 @@ tags: CV REID English
 ### CVPR2019 workshop papers
 
 - Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
+  - Baidu Research
+  - Focusing point: robust for occlusion and perspecrtive variation
+  - Idea
+    - Image feature
+      1) global feature (linear transform. of the pooling feature of last conv.) + self-attention constrain [1] (for paying more attention to the spatial regions)
+      2) Multiple granularities network [2] (for learning more semantic parts)
+      3) Keypoint detection [3] (extract feature around these keypoint)
+    - Video feature 
+  
+  
+  
+    - Using various features: global, regions, area around keypoints
+    - DeepSORT: detected bounding boxes for each frame -> short tracklets
+  - Reference
+    - 
+    - [1] 12
+    - [2] 31
+    - [3] 32
 
 - Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
 
@@ -94,6 +113,14 @@ tags: CV REID English
 - VRIC [[Project]](https://qmul-vric.github.io/) [[pdf]](http://www.eecs.qmul.ac.uk/~xiatian/papers/AytacEtAl_GCPR2018.pdf)
 - Veri-wild [[project]](https://github.com/PKU-IMRE/VERI-Wild) [[pdf]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Lou_VERI-Wild_A_Large_Dataset_and_a_New_Method_for_Vehicle_CVPR_2019_paper.pdf)
 - CityFlow [[project]](https://cityflow-project.github.io/) [[pdf]](https://arxiv.org/pdf/1903.09254.pdf)
+
+
+---
+
+## Proposed
+
+- Focusing point: camera viewpoint change, scale variance, background, occlusion, brightness, car view direction, vehicle landmark, blurry image
+
 
 
 ---
