@@ -36,12 +36,12 @@ tags: CV REID English
       - 1) global feature (linear transform. of the pooling feature of last conv.) + self-attention constrain [1] (for paying more attention to the spatial regions)
       - 2) Region feature (multiple granularities network [2] for learning more semantic parts)
       - 3) Point feature (extract feature around these keypoint by Keypoint detection [3])
-    - Video feature **(post-processing step that applies at the distance matrix between query feature $$q_i$$ and gallery feature $g_j$.)**
+    - Video feature **(post-processing step that applies at the distance matrix between query feature $$q_i$$ and gallery feature $$g_j$$.)**
       - Limitation of image-based re-id: Large intra-class variations and similar inter-class appearances
       - Multi-camera tracking step can provide each vehicle tracklet
       - Each query and gallery image corresponds to a tracklet, so camera info. and duration can be obtained.
       - Refine the distance matrix using simple and effective constraints
-        - If $q_i$ and $g_j$ are *condition*, we push them.
+        - If $$q_i$$ and $$g_j$$ are *condition*, we push them.
         - 1) condition A: same camera & different ID
         - 2)
       
