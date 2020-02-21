@@ -14,7 +14,6 @@ tags: CV REID English
 * TOC
 {:toc}
 
-
 ---
 
 ## AI city challenge 2019 
@@ -32,15 +31,18 @@ tags: CV REID English
   - Baidu Research
   - Focusing point: robust for occlusion and perspecrtive variation
   - Idea
-    - Image feature
-      1) global feature (linear transform. of the pooling feature of last conv.) + self-attention constrain [1] (for paying more attention to the spatial regions)
-      2) Multiple granularities network [2] (for learning more semantic parts)
-      3) Keypoint detection [3] (extract feature around these keypoint)
-    - Video feature 
+    - Using 3 types of image feature and additional video feature assisted by tracking algorithms
+    - Image feature **(regular training step with training set)**
+      - 1) global feature (linear transform. of the pooling feature of last conv.) + self-attention constrain [1] (for paying more attention to the spatial regions)
+      - 2) Region feature (multiple granularities network [2] for learning more semantic parts)
+      - 3) Point feature (extract feature around these keypoint by Keypoint detection [3])
+    - Video feature **(a post-processing step which applies distance matrix between query and gallery features)**
+      - Limitation of image-based re-id: Large intra-class variations and similar inter-class appearances
+      - Multi-camera tracking track can provide each vehicle tracklet
+      - 
+      
   
   
-  
-    - Using various features: global, regions, area around keypoints
     - DeepSORT: detected bounding boxes for each frame -> short tracklets
   - Reference
     - 
