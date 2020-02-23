@@ -41,7 +41,7 @@ tags: CV REID English
       - Multi-camera tracking step can provide each vehicle tracklet
       - Each query and gallery image corresponds to a tracklet, so camera info. and duration can be obtained.
       - Refine the distance matrix using simple and effective constraints
-        - If $$q_i$$ and $$g_j$$ are **some conditions**, we push them.
+        - If $$q_i$$ and $$g_j$$ are **some below conditions**, we push them.
         - 1) condition A: same camera & different ID (This constraint can filter lots of false positives that are similar with a certain
 query in appearance and direction)
         - 2) condition B: same camera (scenario 2) & similar direction (when two direction probability vectors are similar,
