@@ -99,7 +99,7 @@ Overview                   |  Temporal attention
     - Vehicle orientation feature descriptor
       - Estimate surface normal vector
       - Concatenate the signed-areas of the projection of all the surfaces and perform L2-norm.
-      - 36 points $\rightarrow$ 18-dim vehicle orientation feature descriptor
+      - 36 points $$\rightarrow$$ 18-dim vehicle orientation feature descriptor
     - Viewpoint-aware temporal attention model
       - Combine frame-level features using temporal attention modeling [2]
       - Train spatial conv (2D) + temporal conv (1D)
@@ -125,7 +125,7 @@ Overview                   |  Temporal attention
         - The self-recorded data are fed into the model (pretrained on CompCar and AIC) and samples with high confidence are included into the training set
         - The modal is trained and evaluated iteratively until it achieves a good accuracy on the validation set
       - Data augmentation
-        - All images are preprocessed with orientation estimation and the visible parts are cropped (512 $\times$ 512)
+        - All images are preprocessed with orientation estimation and the visible parts are cropped (512 $$\times$$ 512)
         - Use various cropped images by visibility estimation
   - Reference
     - Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
@@ -180,7 +180,7 @@ Overview                   |  Temporal attention
       - During testing, we use it to refine the gallery by ruling out the impossible images (transfer time longer than the corresponding value in the maximum transfer time matrix)
     - Training
       - Feature learning: IDE+ [5]
-      - Crop 256 $\times$ 256
+      - Crop 256 $$\times$$ 256
       - Validate by Veri776 dataset
   - Reference
     - Vehicle Re-identification with Location and Time Stamps
