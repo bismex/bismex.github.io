@@ -28,7 +28,6 @@ tags: CV REID English
 ### CVPR2019 workshop papers
 
 - **(1. Baidu ZeroOne)** 
-  - Title: Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
   - Focusing point: robust for occlusion and perspecrtive variation
   - Methods
     - Using 3 types of image feature and additional video feature assisted by tracking algorithms
@@ -46,16 +45,21 @@ tags: CV REID English
 query in appearance and direction)
         - 2) condition B: same camera (scenario 2) & similar direction (when two direction probability vectors are similar,
 the corresponding query and gallery are likely to be different vehicles)
-        - 3) condition C: 
-      
-  
-  
-    - DeepSORT: detected bounding boxes for each frame -> short tracklets
+        - 3) condition C: similar car type (multi-task branches: ID + type classification / trained by CityFlow-ReID [4]) & distance over a certain value (two vehicles with different car types are matched as the same one with a high confidence in camera 35)
+        - 4) condition D: maximum elapsed time of the gallery and query tracklet is greater than the estimated elapsed time of the camera (time difference must be less than an estimated time window when a vehicle moves from one camera to another)
+    - Extra group distance
+      - We can get the group split of all gallery images (by combining the provided the tracklet info. of CityFlow-ReID [4] and the results of multi-camera tracking)
+      - For each group, find the smallest distance value and add it to all pairs in the group. (weighted sum)
+    - Re-ranking [5]
+      - Several false positives reoccur after reranking, so constraints are applied again to exclude bad cases
+     
   - Reference
-    - 
+    - Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
     - [1] 12
     - [2] 31
     - [3] 32
+    - [4] 27
+    - [5] 35
 
 - Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
 
