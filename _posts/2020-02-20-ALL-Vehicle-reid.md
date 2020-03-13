@@ -25,7 +25,13 @@ tags: CV REID English
 ![picture]({{ '/assets/images/VREID01.PNG' | relative_url }}){: style="width: 70%;" class="center"}
 <br/>
 
+
+
+
 ### CVPR2019 workshop papers
+
+
+
 
 - **(1. Baidu ZeroOne)** 
   - Methods
@@ -75,6 +81,10 @@ the corresponding query and gallery are likely to be different vehicles)
     - [5] Zhong, Zhun, et al. "Re-ranking person re-identification with k-reciprocal encoding." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.
     - [6] Krause, Jonathan, et al. "3d object representations for fine-grained categorization." Proceedings of the IEEE international conference on computer vision workshops. 2013.
     - [7] Liu, Hongye, et al. "Deep relative distance learning: Tell the difference between similar vehicles." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.
+
+
+
+
 
 
 Overview                   |  Temporal attention
@@ -129,6 +139,10 @@ Overview                   |  Temporal attention
 
 
 
+
+
+
+
 <br/>
 <p align="center" style="color: #e01f1f; font-weight: bold;">[Overall framework]</p>
 ![picture]({{ '/assets/images/AIC2019_ANU01.png' | relative_url }}){: style="width: 70%;" class="center"}
@@ -175,6 +189,9 @@ Overview                   |  Temporal attention
     - [3] Chum, Ondrej, et al. "Total recall: Automatic query expansion with a generative feature model for object retrieval." 2007 IEEE 11th International Conference on Computer Vision. IEEE, 2007.
     - [4] Wu, Chih-Wei, et al. "Vehicle re-identification with the space-time prior." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops. 2018.
     - [5] Zheng, Liang, et al. "Mars: A video benchmark for large-scale person re-identification." European Conference on Computer Vision. Springer, Cham, 2016.
+
+
+
 
 - VehicleNet, Learning Robust Feature Representation for Vehicle Re-identification
 
