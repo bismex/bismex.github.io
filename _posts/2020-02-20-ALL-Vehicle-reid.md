@@ -83,10 +83,49 @@ Overview                   |  Temporal attention
 
 - **(2. U. Washington IPL)** 
   - Methods
-    - 
+    - Frame-level feature extraction
+      - Feature extrator, ResNet50 (pre-trained on ImageNet, 2048-dim fc layer)
+      - Keypoint localization (36 points) [1]
+    - Vehicle orientation feature descriptor
+      - Estimate surface normal vector
+      - Concatenate the signed-areas of the projection of all the surfaces and perform L2-norm.
+      - 36 points $\rightarrow$ 18-dim vehicle orientation feature descriptor
+    - Viewpoint-aware temporal attention model
+      - Combine frame-level features using temporal attention modeling [2]
+      - Train spatial conv (2D) + temporal conv (1D)
+    - Loss function
+      - Cross-entropy loss
+      - Triplet loss
+        - Batch sample [3] instead of batch hard [4] (to filter sampling outliers)
+        - Use the multinomial distribution of anchor-to-sample distance to sample data for training
+    - Metadata classification
+      - Manually label AIC19 ReID dataset (vehicle type, brand, color)
+      - Multi-label classification task
+      - Train by 29-layer light CNN [5] (small kernel size, net-in-net layers, max-feature operation, add one net-in-net layer, so the dimension of fc layer is extended to 2048 rather than 256)
+    - Metadata distance (create new distance matrix)
+      - The intuitive idea is that the samples with different metadata classes would have larger distance (use KLD)
+      - Obtain a new distance by combining the initial ReID distance and metadata distance
+    - Re-ranking with k-reciprocal encoding
+      - Based on [6]
+      - Re-ranking with soft decision boundary
+      - We generate k-reciprocal nearest neighbor at for the original kNN and then re-calculate the distance between probe and gallery by adding Jaccard distance
+    - Training
+      - Use AIC2019 dataset, CompCar dataset [7], self-record traffic video (1 hour each camera, 8 cameras)
+      - Train a progressive way
+        - The self-recorded data are fed into the model (pretrained on CompCar and AIC) and samples with high confidence are included into the training set
+        - The modal is trained and evaluated iteratively until it achieves a good accuracy on the validation set
+      - Data augmentation
+        - All images are preprocessed with orientation estimation and the visible parts are cropped (512 $\times$ 512)
+        - Use various cropped images by visibility estimation
   - Reference
     - Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
-
+    - [1] Ansari, Junaid Ahmed, et al. "The Earth Ain't Flat: Monocular Reconstruction of Vehicles on Steep and Graded Roads from a Moving Camera." 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2018.
+    - [2] Gao, Jiyang, and Ram Nevatia. "Revisiting temporal modeling for video-based person reid." arXiv preprint arXiv:1805.02104 (2018).
+    - [3] Kuma, Ratnesh, et al. "Vehicle re-identification: an efficient baseline using triplet embedding." 2019 International Joint Conference on Neural Networks (IJCNN). IEEE, 2019.
+    - [4] Schroff, Florian, Dmitry Kalenichenko, and James Philbin. "Facenet: A unified embedding for face recognition and clustering." Proceedings of the IEEE conference on computer vision and pattern recognition. 2015.
+    - [5] Wu, Xiang, et al. "A light cnn for deep face representation with noisy labels." IEEE Transactions on Information Forensics and Security 13.11 (2018): 2884-2896.
+    - [6] Zhong, Zhun, et al. "Re-ranking person re-identification with k-reciprocal encoding." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.
+    - [7] Yang, Linjie, et al. "A large-scale car dataset for fine-grained categorization and verification." Proceedings of the IEEE conference on computer vision and pattern recognition. 2015.
 
 - **(3. Australian National U.)** 
   - Methods
