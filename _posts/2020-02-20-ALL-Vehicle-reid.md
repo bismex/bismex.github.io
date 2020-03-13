@@ -50,7 +50,7 @@ the corresponding query and gallery are likely to be different vehicles)
     - Extra group distance
       - We can get the group split of all gallery images (by combining the provided the tracklet info. of CityFlow-ReID [4] and the results of multi-camera tracking)
       - For each group, find the smallest distance value and add it to all pairs in the group. (weighted sum)
-    - Re-ranking [5]
+    - Re-ranking with k-reciprocal encoding [5] 
       - Several false positives reoccur after reranking, so constraints are applied again to exclude bad cases
   - Training
     - CityFlow-ReiD is split into two parts (model selection & parameter learning)
@@ -69,13 +69,13 @@ the corresponding query and gallery are likely to be different vehicles)
       - Point feature (seresnext101)
   - Reference
     - Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
-    - [1] 12
-    - [2] 31
-    - [3] 32
-    - [4] 27
-    - [5] 35
-    - [6] 13
-    - [7] 19
+    - [1] Jiang, Minyue, Yuan Yuan, and Qi Wang. "Self-attention Learning for Person Re-identification." BMVC. 2018.
+    - [2] Wang, Guanshuo, et al. "Learning discriminative features with multiple granularities for person re-identification." Proceedings of the 26th ACM international conference on Multimedia. 2018.
+    - [3] Wang, Zhongdao, et al. "Orientation invariant feature embedding and spatial temporal regularization for vehicle re-identification." Proceedings of the IEEE International Conference on Computer Vision. 2017.
+    - [4] Tang, Zheng, et al. "Cityflow: A city-scale benchmark for multi-target multi-camera vehicle tracking and re-identification." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2019.
+    - [5] Zhong, Zhun, et al. "Re-ranking person re-identification with k-reciprocal encoding." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.
+    - [6] Krause, Jonathan, et al. "3d object representations for fine-grained categorization." Proceedings of the IEEE international conference on computer vision workshops. 2013.
+    - [7] Liu, Hongye, et al. "Deep relative distance learning: Tell the difference between similar vehicles." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.
 
 - Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
 
