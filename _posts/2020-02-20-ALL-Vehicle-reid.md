@@ -28,7 +28,6 @@ tags: CV REID English
 ### CVPR2019 workshop papers
 
 - **(1. Baidu ZeroOne)** 
-  - Focusing point: robust for occlusion and perspecrtive variation
   - Methods
     - Using 3 types of image feature and additional video feature assisted by tracking algorithms
     - Image feature **(regular training step with training set)**
@@ -77,9 +76,19 @@ the corresponding query and gallery are likely to be different vehicles)
     - [6] Krause, Jonathan, et al. "3d object representations for fine-grained categorization." Proceedings of the IEEE international conference on computer vision workshops. 2013.
     - [7] Liu, Hongye, et al. "Deep relative distance learning: Tell the difference between similar vehicles." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.
 
-- Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
 
-- Vehicle Re-identification with Location and Time Stamps
+- **(2. U. Washington IPL)** 
+  - Methods
+    - 
+  - Reference
+    - Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-ranking
+
+
+- **(3. Australian National U.)** 
+  - Methods
+    - 
+  - Reference
+    - Vehicle Re-identification with Location and Time Stamps
 
 - VehicleNet, Learning Robust Feature Representation for Vehicle Re-identification
 
