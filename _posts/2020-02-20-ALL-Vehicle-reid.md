@@ -27,10 +27,10 @@ tags: CV REID English
 
 ### CVPR2019 workshop papers
 
-- Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
-  - Baidu Research
+- **(1. Baidu ZeroOne)** 
+  - Title: Multi-camera vehicle tracking and re-identification based on visual and spatial-temporal features
   - Focusing point: robust for occlusion and perspecrtive variation
-  - Idea
+  - Methods
     - Using 3 types of image feature and additional video feature assisted by tracking algorithms
     - Image feature **(regular training step with training set)**
       - 1) global feature (linear transform. of the pooling feature of last conv.) + self-attention constrain [1] (for paying more attention to the spatial regions)
