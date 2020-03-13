@@ -127,11 +127,54 @@ Overview                   |  Temporal attention
     - [6] Zhong, Zhun, et al. "Re-ranking person re-identification with k-reciprocal encoding." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.
     - [7] Yang, Linjie, et al. "A large-scale car dataset for fine-grained categorization and verification." Proceedings of the IEEE conference on computer vision and pattern recognition. 2015.
 
+
+
+<br/>
+<p align="center" style="color: #e01f1f; font-weight: bold;">[Overall framework]</p>
+![picture]({{ '/assets/images/AIC2019_ANU01.png' | relative_url }}){: style="width: 70%;" class="center"}
+<br/>
+
 - **(3. Australian National U.)** 
   - Methods
-    - 
+    - Feature extractor
+      - DenseNet121
+      - Baseline: triplet + cross-entropy loss + label smoothing regularization (LSR) [1]
+      - Ensembling classifiers (normalize and concatenate)
+        - Baseline w/ hard margin triplet
+        - Baseline w/ soft margin triplet
+        - Baseline w/ hard margin triplet + Jitter augmentation
+      - Query expansion 
+        - Based on image retrieval problem [2,3]
+        - The basic principle of query expansion lies in that given several vehicles with gradually different perspectives or lighting conditions, and intermediate vehicles can help us to connect them.
+        - Given the top k(=10) retrieved results of a query image and query itself, we cum-aggregate and re-normalize the feature representations of them 
+      - Temporal pooling for gallery
+        - The gallery consists of several image sequences
+        - Use temporal pooling (average pooling) for gallery images during inference (T = 5)
+    - Stamps acquisition
+      - There is no location and time of the test images
+      - Calculate the feature distance between test images and detection patches
+      - Each test image will have a ranking list
+      - Take the first detection patch from the list to get its location and time stamp (location stamp is set as the camera location)
+    - Spatial-Temporal constraint
+      - Spatio-temporal details can strictly reduce the number of irrelevant gallery images
+      - There are strict rules for vehicle trajectories rather than human (the vehicles always follow the traffic lanes and the speed remains apprioximately the same)
+      - As mentioned in [4], there are two key findings
+        - One vehicle can not appear at multiple locations at the same time
+        - Vehicles should move continuously along the time
+      - Location and time stamps are leveraged for the gallery refinement
+      - During training, we construct a transfer time matrix with the maximum transfer time between each pair of camera (for the cameras that not appeared in the training set, we use the distance between camera pairs to estimate the maximum transfer time)
+      - During testing, we use it to refine the gallery by ruling out the impossible images (transfer time longer than the corresponding value in the maximum transfer time matrix)
+    - Training
+      - Feature learning: IDE+ [5]
+      - Crop 256 $\times$ 256
+      - Validate by Veri776 dataset
   - Reference
     - Vehicle Re-identification with Location and Time Stamps
+    - [1] Szegedy, Christian, et al. "Rethinking the inception architecture for computer vision." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
+    - [2] Arandjelović, Relja, and Andrew Zisserman. "Three things everyone should know to improve object retrieval." 2012 IEEE Conference on Computer Vision and Pattern Recognition. IEEE, 2012.
+    - [3] Chum, Ondrej, et al. "Total recall: Automatic query expansion with a generative feature model for object retrieval." 2007 IEEE 11th International Conference on Computer Vision. IEEE, 2007.
+    - [4] Wu, Chih-Wei, et al. "Vehicle re-identification with the space-time prior." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops. 2018.
+    - [5] Zheng, Liang, et al. "Mars: A video benchmark for large-scale person re-identification." European Conference on Computer Vision. Springer, Cham, 2016.
 
 - VehicleNet, Learning Robust Feature Representation for Vehicle Re-identification
 
