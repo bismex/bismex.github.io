@@ -77,17 +77,6 @@ the corresponding query and gallery are likely to be different vehicles)
     - [7] Liu, Hongye, et al. "Deep relative distance learning: Tell the difference between similar vehicles." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.
 
 
-<br/>
-<p align="center" style="color: #e01f1f; font-weight: bold;">[Overview]</p>
-![picture]({{ '/assets/images/AIC2019_UW01.png' | relative_url }}){: style="width: 50%;" class="center"}
-<br/>
-
-
-<br/>
-<p align="center" style="color: #e01f1f; font-weight: bold;">[Temporal attention]</p>
-![picture]({{ '/assets/images/AIC2019_UW02.png' | relative_url }}){: style="width: 50%;" class="center"}
-<br/>
-
 Overview                   |  Temporal attention
 :-------------------------:|:-------------------------:
 ![](/assets/images/AIC2019_UW01.png)  |  ![](/assets/images/AIC2019_UW02.png)
